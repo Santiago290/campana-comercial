@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("campana-comercial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67d46779c629ab98f1323fc2ac43bac12f9f81e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d15ba724345482a672a36077e50a96c1ef07f8f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("campana-comercial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("campana-comercial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
