@@ -1,0 +1,39 @@
+﻿@model List<campana_comercial.Models.Campana>
+
+<h2>Campañas Comerciales</h2>
+
+<div style="display:flex; flex-wrap:wrap; gap:20px;">
+
+@foreach (var c in Model)
+{
+    <div style="width:300px; border:1px solid #ddd; border-radius:10px; padding:15px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+
+        <h3>@c.Nombre</h3>
+
+        <p><strong>Categoría:</strong> @c.Categoria</p>
+        <p><strong>Canal:</strong> @c.Canal</p>
+        <p><strong>Descuento:</strong> @c.DescuentoPct %</p>
+
+        <span style="
+            padding:5px 10px;
+            border-radius:20px;
+            color:white;
+            background-color:@(c.Estado == "Vigente" ? "green" : c.Estado == "Próxima" ? "blue" : "gray");
+        ">
+            @c.Estado
+        </span>
+
+        <br /><br />
+
+        <a href="/Campanas/Detalle/@c.Id"
+           style="display:block; text-align:center; padding:8px; background:#eee; border-radius:5px; text-decoration:none;">
+            Ver detalle
+        </a>
+
+    </div>
+}
+
+</div>
+
+<br />
+<a href="/Campanas/Resumen">Ver resumen</a>
